@@ -1,0 +1,41 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+
+	  <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <style>
+      body{
+        background: url('{% static "recognition/img/bg_image.jpg"%}') no-repeat center center fixed;
+        background-size: cover;
+        
+      }
+     
+     </style>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+	
+</head>
+ <body>
+
+<div></div>
+<div style="background-color:black; opacity: 80%; color: antiquewhite;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; padding-block: 50px; text-align: center; font-size: larger ;width: 20cm; margin-top: 5cm; margin-left: 9cm;" >
+ 
+   How are you feeling today, really?  Physically and mentally.
+   <a href='{%url "answer1" %}' class="btn btn-success" style="position:fixed ;left:500px ;top:90px; padding-left: 5cm; padding-right: 5cm;">START</a></button>
+
+<button><a href='{%url "clickPicture1" %}'> Next question</a></button>
+</div>
+
+
+</body>
+</html>
